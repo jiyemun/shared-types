@@ -22,3 +22,17 @@ export const LICENSES = {
 } as const;
 
 export type License = (typeof LICENSES)[keyof typeof LICENSES];
+
+export interface ModuleProps {
+  region: RegionType;
+  role: Role;
+  license: LicenseDetail;
+}
+
+export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];
+
+export const REGION_KEY = {
+  QA: "staging",
+  GLOBAL: "kr",
+  COM2US: "com2us",
+} as const;
