@@ -1,10 +1,9 @@
 export interface LicenseDetail {
     id: number | null;
-    name: string;
+    name: License;
     dataSave: boolean;
     dataDelete: boolean;
     excelDownload: boolean;
-    license: License;
 }
 export declare const ROLES: {
     readonly VIEWER: "viewer";
