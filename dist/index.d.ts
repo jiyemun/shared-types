@@ -25,6 +25,7 @@ export interface ModuleProps {
 export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];
 export declare const REGION_KEY: {
     readonly QA: "staging";
-    readonly GLOBAL: "kr";
+    readonly KOREA: "kr";
+    readonly GLOBAL: "global";
     readonly COM2US: "com2us";
 };

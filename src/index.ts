@@ -32,6 +32,7 @@ export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];
 
 export const REGION_KEY = {
   QA: "staging",
-  GLOBAL: "kr",
+  KOREA: "kr",
+  GLOBAL: "global",
   COM2US: "com2us",
 } as const;
