@@ -33,7 +33,7 @@ export interface ModuleProps {
   region: RegionType;
   role: Role;
   license: LicenseDetail;
-  theme: ThemeType;
+  theme?: ThemeType;
 }
 
 export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];
