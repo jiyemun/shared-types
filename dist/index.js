@@ -8,6 +8,10 @@ export const LICENSES = {
     PRO: "pro",
     ENTERPRISE: "enterprise",
 };
+export const ThemeKey = {
+    LIGHT_THEME: "light",
+    DARK_THEME: "dark",
+};
 export const REGION_KEY = {
     QA: "staging",
     KOREA: "kr",

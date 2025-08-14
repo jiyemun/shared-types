@@ -22,10 +22,18 @@ export const LICENSES = {
 
 export type License = (typeof LICENSES)[keyof typeof LICENSES];
 
+export const ThemeKey = {
+  LIGHT_THEME: "light",
+  DARK_THEME: "dark",
+} as const;
+
+export type ThemeType = (typeof ThemeKey)[keyof typeof ThemeKey];
+
 export interface ModuleProps {
   region: RegionType;
   role: Role;
   license: LicenseDetail;
+  theme: ThemeType;
 }
 
 export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];

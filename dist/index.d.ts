@@ -17,10 +17,16 @@ export declare const LICENSES: {
     readonly ENTERPRISE: "enterprise";
 };
 export type License = (typeof LICENSES)[keyof typeof LICENSES];
+export declare const ThemeKey: {
+    readonly LIGHT_THEME: "light";
+    readonly DARK_THEME: "dark";
+};
+export type ThemeType = (typeof ThemeKey)[keyof typeof ThemeKey];
 export interface ModuleProps {
     region: RegionType;
     role: Role;
     license: LicenseDetail;
+    theme: ThemeType;
 }
 export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];
 export declare const REGION_KEY: {
