@@ -28,6 +28,7 @@ export interface ModuleProps {
     license?: LicenseDetail | null;
     theme?: ThemeType;
     permission: Permission[];
+    accessToken?: string | null;
 }
 export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];
 export declare const REGION_KEY: {
@@ -53,6 +54,7 @@ export declare const MENU_KEY: {
     readonly C4_AUTH_SERVER_INVALID: "C4_AUTH_SERVER_INVALID";
     readonly C4_AUTH_FLEXIBLE_POLICY: "C4_AUTH_FLEXIBLE_POLICY";
     readonly C4_AUTH_WATCH_IP_AUTH: "C4_AUTH_WATCH_IP_AUTH";
+    readonly C4_AUTH_WATCH_IP_SETTING: "C4_AUTH_WATCH_IP_SETTING";
     readonly C4_AUTH_BLACK: "C4_AUTH_BLACK";
     readonly DEVELOP: "DEVELOP";
     readonly MODULE_VERSION: "MODULE_VERSION";
