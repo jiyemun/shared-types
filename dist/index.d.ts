@@ -27,7 +27,7 @@ export interface ModuleProps {
     role: Role;
     license?: LicenseDetail | null;
     theme?: ThemeType;
-    permission: Permission[];
+    permission?: Permission[];
     accessToken?: string | null;
 }
 export type RegionType = (typeof REGION_KEY)[keyof typeof REGION_KEY];

@@ -34,7 +34,7 @@ export interface ModuleProps {
   role: Role;
   license?: LicenseDetail | null;
   theme?: ThemeType;
-  permission: Permission[]
+  permission?: Permission[]
   accessToken?: string | null;
 }
 
