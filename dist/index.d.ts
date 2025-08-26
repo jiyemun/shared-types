@@ -62,7 +62,6 @@ export declare const MENU_KEY: {
     readonly MODULE_VERSION_REPORTED: "MODULE_VERSION_REPORTED";
     readonly APP_GUARDING_HISTORY: "APPGUARDING_HISTORY";
     readonly HIDDEN_LOG: "HIDDEN_LOG";
-    readonly USER: "user";
-    readonly TEST: "test";
+    readonly USER: "USER";
 };
 export type MenuType = (typeof MENU_KEY)[keyof typeof MENU_KEY];

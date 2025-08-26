@@ -73,8 +73,7 @@ export const MENU_KEY = {
   MODULE_VERSION_REPORTED: "MODULE_VERSION_REPORTED",
   APP_GUARDING_HISTORY: "APPGUARDING_HISTORY",
   HIDDEN_LOG: "HIDDEN_LOG",
-  USER: "user",
-  TEST: "test",
+  USER: "USER",
 } as const;
 
 export type MenuType = (typeof MENU_KEY)[keyof typeof MENU_KEY];
